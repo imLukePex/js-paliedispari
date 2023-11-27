@@ -4,6 +4,7 @@
 // Chiediamo a User una parola
 const userParola = prompt("Inserisci una parola");
 
+// Richiamo funzione
 let parolaInversa = typeParola(userParola);
 
 // Condizione da verificare per capire se la parola inserita sia palindroma o no
@@ -14,8 +15,11 @@ if(parolaInversa === userParola) {
 }
 
 // Funzione che capisce se la parola inserita è palindroma o no
+
+// Settiamo la funzione
 function typeParola(parolaToCheck) {
     
+    // Variabile da popolare
     let parolaInversa = "";
 
     // Settiamo valore dell'indice
@@ -24,39 +28,9 @@ function typeParola(parolaToCheck) {
     // Ciclo while per scorrere ogni carattere della parola dalla fine all'inizio
     while (i >= 0) {
         parolaInversa += parolaToCheck[i];
-        console.log(`La parola inserita è: ${parolaToCheck}`);
+        console.log(`La parola che hai inserito è: ${parolaToCheck}`);
         i--;
     }
 
     return parolaInversa;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Creaiamo variabile singolo carattere e variabile userParola invertita
-// let carattere;
-// let parolaInversa = "";
-
-// // Settiamo valore dell'indice
-// let i = userParola.length - 1;
-
-// // Ciclo while per scorrere ogni carattere della parola dalla fine all'inizio
-// while (i >= 0) {
-//     carattere = userParola[i];
-//     parolaInversa += carattere;
-//     console.log(carattere);
-//     i--;
-// }
-
-// console.log(parolaInversa);
