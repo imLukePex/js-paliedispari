@@ -3,10 +3,11 @@
 
 // Chiediamo a User una parola
 const userParola = prompt("Inserisci una parola");
-console.log(userParola);
+
+let parolaInversa = typeParola(userParola);
 
 // Condizione da verificare per capire se la parola inserita sia palindroma o no
-if(parolaInversa === typeParola(userParola)) {
+if(parolaInversa === userParola) {
     console.log("La parola inserita è palindroma");
 } else {
     console.log("La parola inserita non è palindroma");
@@ -15,8 +16,6 @@ if(parolaInversa === typeParola(userParola)) {
 // Funzione che capisce se la parola inserita è palindroma o no
 function typeParola(parolaToCheck) {
     
-
-    // Check se parola è palindroma o no
     let parolaInversa = "";
 
     // Settiamo valore dell'indice
@@ -25,7 +24,7 @@ function typeParola(parolaToCheck) {
     // Ciclo while per scorrere ogni carattere della parola dalla fine all'inizio
     while (i >= 0) {
         parolaInversa += parolaToCheck[i];
-        console.log(parolaToCheck);
+        console.log(`La parola inserita è: ${parolaToCheck}`);
         i--;
     }
 
