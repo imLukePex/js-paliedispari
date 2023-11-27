@@ -10,6 +10,41 @@
     <title>Esercizio 26 - Pari o Dispari - JavaScript</title>
 </head>
 <body>
+
+    <div class="container">
+        <!-- Title -->
+        <h1>Gioco Pari o Dispari</h1>
+        <!-- Subtitle -->
+        <div class="subtitle">
+            <h3>Il giocatore sceglie scrivendo nel form sottostante se scommettere su un numero pari o dispari e successivamente inserisce un numero da 1 a 5. <br> Allo stesso modo il computer genererà un numero random (sempre da 1 a 5). <br> Se la somma dei due numeri scelti è un numero che coincide con la scelta fatta dal giocatore tra pari e dispari, il giocatore ha vinto, altrimenti ha vinto il computer.</h3>
+        </div>
+        <!-- First Box -->
+        <div id="box">
+            <div class="input-box">
+                <div class="first-input">
+                    <label for="numero">Scegli se pari o dispari</label>
+                    <input type="text" id="puntata-user" placeholder="Es. pari">
+                </div>
+                <div class="second-input">
+                    <label for="numero">Scegli un numero da 1 a 5</label>
+                    <input type="text" id="numero-user" placeholder="Es. 3">
+                </div>
+            </div>
+
+            <div class="button-box">
+                <button id="submit">Invia</button>
+                <button id="delete">Annulla</button>
+            </div>
+        </div>
+
+        <!-- Second Box -->
+        <div id="result-box" class="d-none">
+            <div class="result-content">
+                <div id="random-number"></div>
+                <div id="final-result"></div>
+            </div>
+        </div>
+    </div>
     
     <script type="text/javascript" src="js/script.js"></script>
 </body>
